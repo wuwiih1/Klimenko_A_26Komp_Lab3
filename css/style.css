@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: 1px solid black;
+}
+
+.main div {
+    border: 1px solid black;
+    position: relative;
+}
+
+.one {
+    background-color: rgb(89, 172, 255);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} .one span {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+}
+.two {
+    background-color: rgb(165, 255, 165);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 11;
+} .two span {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+}
+.three {
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 9;
+} .three span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.four {
+    background-color: rgb(165, 255, 165);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+} .four span {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+}
+.five {
+    background-color: rgb(255, 131, 131);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+} .five span {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+}
+.six {
+    background-color: rgb(89, 172, 255);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 11;
+} .six span {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+}
+
+.x {
+    position: absolute;
+    width: 100px;
+    left: 1em;
+    top: 50%;
+    text-align: right;
+    padding: 3px;
+} .y {
+    position: absolute;
+    text-align: right;
+    left: 1em;
+    width: 100px;
+    top: 50%;
+    padding: 3px;
+}
+
+input[type=button] {
+    background-color: white;
+    border-style: solid;
+    padding: 5px;
+    margin: 5px;
+} input[type=button]:hover {
+    cursor: pointer;
+}
+.task3, form > input {
+    width: 200px;
+    padding: 3px;
+    margin: 5px;
+    display: block;
+}
+.task3_answer {
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+}
+form {
+    position: absolute;
+    top: 50%;
+}
